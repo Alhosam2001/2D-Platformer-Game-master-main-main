@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class Door : MonoBehaviour
 {
 
     public Signal signalOn;
     public Signal signalOff;
     private PlayerController thePlayer;
-
+    
     public SpriteRenderer theSR;
     public Sprite doorOpenSprite;
 
     public bool doorOpen, waitingToOpen;
+    public static bool isWinningLVL1 = false;
+    public static bool isWinningLVL2 = false;
+    public static bool isWinningLVL3 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -37,9 +41,21 @@ public class Door : MonoBehaviour
 
             }
         }
-        if (doorOpen && Vector3.Distance(thePlayer.transform.position,transform.position)<1f && Input.GetKeyDown("space"))
+        if (doorOpen && Vector3.Distance(thePlayer.transform.position,transform.position)<1f)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (SceneManager.GetActiveScene().name == "Level01")
+            {
+                isWinningLVL1 = true;
+            }
+            if (SceneManager.GetActiveScene().name == "Level02")
+            {
+                isWinningLVL2 = true;
+            }
+            if (SceneManager.GetActiveScene().name == "Level03")
+            {
+                isWinningLVL3 = true;
+            }
+            SceneManager.LoadScene("Transfer");
         }
     }
 

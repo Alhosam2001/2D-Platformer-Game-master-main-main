@@ -9,6 +9,7 @@ TagManager:
   - grabbable
   - pickUp
   - overAll
+  - Tomato
   layers:
   - Default
   - TransparentFX

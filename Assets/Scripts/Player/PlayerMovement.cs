@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         playerRB.velocity = new Vector2(direction * speed * Time.fixedDeltaTime, playerRB.velocity.y);
         animator.SetFloat("speed", Mathf.Abs(direction));
 
-        if (isFacingRight && direction < 0 || !isFacingRight && direction >0 )
+        if (isFacingRight && direction < 0 || !isFacingRight && direction > 0)
             Flip();
         if (isTouched && speed > 0)
         {
@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
                 transform.localScale.y + 0.2f * scalSpeed,
                 0);
             speedFat = 100f;
-            speed = speed -  0.1f * speedFat;
+            speed = speed - 0.1f * speedFat;
             isTouched = false;
         }
     }
@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            if(numberOfJumps == 1)
+            if (numberOfJumps == 1)
             {
                 playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
                 numberOfJumps++;

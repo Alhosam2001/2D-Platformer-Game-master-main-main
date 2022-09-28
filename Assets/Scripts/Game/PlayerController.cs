@@ -10,8 +10,21 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
 
     public Transform keyFollowPoint;
+    public Transform Information;
+
+    public Transform firstPosition;
+    public Transform secondPosition;
+    public Transform thirdPosition;
+    public Transform forthPosition;
 
     public Key followingKey;
+
+    public Information followInfo;
+
+    public TomatoSign firstPos;
+    public TomatoSign2 secondPos;
+    public TomatoSign3 thirdPos;
+    public TomatoSign4 forthPos;
 
     // Start is called before the first frame update
     void Start()

@@ -11,8 +11,6 @@ public class Key : MonoBehaviour
 
     public Transform followTarget;
 
-    //public Transform position = transform.position -3 ;
-
     // Start is called before the first frame update
     void Start()
     {

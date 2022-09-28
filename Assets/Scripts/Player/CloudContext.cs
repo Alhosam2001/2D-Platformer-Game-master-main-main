@@ -12,6 +12,6 @@ public class CloudContext : MonoBehaviour
     }
     public void Disable()
     {
-        cloudContext.SetActive(false);
+            cloudContext.SetActive(false);
     }
 }
