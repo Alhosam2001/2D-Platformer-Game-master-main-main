@@ -8,6 +8,7 @@ public class Chest : MonoBehaviour
     public Signal signalOn;
     public Signal signalOff;
     private PlayerController thePlayer;
+    public GameObject gameO;
 
     public SpriteRenderer theSR;
     public Sprite doorOpenSprite;
@@ -34,7 +35,7 @@ public class Chest : MonoBehaviour
 
                 thePlayer.followingKey.gameObject.SetActive(false);
                 thePlayer.followingKey = null;
-                Tomato3LVL2.tomato.GetComponent<SpriteRenderer>().sortingOrder =10;
+                gameO.SetActive(true);
             }
         }
     }

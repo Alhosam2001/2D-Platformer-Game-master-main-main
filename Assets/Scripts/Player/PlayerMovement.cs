@@ -1,20 +1,27 @@
 using UnityEngine;
-
 public class PlayerMovement : MonoBehaviour
 {
     PlayerControls controls;
 
     float direction = 0;
-    public float speedFat;
-    public float speed = 400;
-    public float scalSpeed = 1f;
+    public  float speedFat;
+    public  float speed = 250;
+    public  float scalSpeed = 1f;
+    public float habdehX;
+    public float habdehY;
+    public int i = 4;
+    public Vector3 scaleAfterChange = new Vector3(0.1f,0.1f,0);
+    public Vector3 check = new Vector3();
 
     public static bool isTouched = false;
+    public static bool Healther = false;
     public bool isFacingRight = true;
 
     public float jumpForce = 5;
     bool isGrounded;
     int numberOfJumps = 0;
+
+    public GameObject game;
     public Transform groundCheck;
     public LayerMask groundLayer;
 
@@ -46,14 +53,33 @@ public class PlayerMovement : MonoBehaviour
             Flip();
         if (isTouched && speed > 0)
         {
-            transform.localScale = new Vector3(
-                transform.localScale.x + 0.2f * scalSpeed,
-                transform.localScale.y + 0.2f * scalSpeed,
-                0);
+            habdehX = transform.localScale.x + 0.2f;
+            habdehY = transform.localScale.y + 0.2f;
+
+            transform.localScale += scaleAfterChange;
+            check = transform.localScale;
+            Debug.Log(check);
             speedFat = 100f;
-            speed = speed - 0.1f * speedFat;
+            //speed = speed - 0.5f * speedFat;
             isTouched = false;
         }
+        if (Healther && BecomeHealther.enterCount <5)
+        {
+            habdehX -= scaleAfterChange.x;
+                habdehY -= scaleAfterChange.y;
+                transform.localScale = new Vector3(habdehX, habdehY, 0);
+                check = new Vector3(habdehX, habdehY, 0);
+                Debug.Log(check);
+                Debug.Log(transform.localScale);
+                speedFat = 250f;
+                //speed = speed - 0.5f * speedFat;
+                Healther = false;
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        //if ()
+        //{
+        //    game.SetActive(false);
+        //}
     }
 
     void Flip()

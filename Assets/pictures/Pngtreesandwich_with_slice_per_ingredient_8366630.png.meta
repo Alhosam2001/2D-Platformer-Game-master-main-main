@@ -1,43 +1,25 @@
 fileFormatVersion: 2
-guid: c483493eb3ec0f143b5d78ad823ac661
+guid: 5a6b01ee0568396469af91022f15c450
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2976041059057689810
-    second: 1x_0
+      213: -1446405949183926777
+    second: Pngtreesandwich_with_slice_per_ingredient_8366630_0
   - first:
-      213: 356572232501902205
-    second: 1x_1
+      213: 717575592578682327
+    second: Pngtreesandwich_with_slice_per_ingredient_8366630_1
   - first:
-      213: 7680883545352735267
-    second: 1x_2
+      213: -2070273380150699104
+    second: Pngtreesandwich_with_slice_per_ingredient_8366630_2
   - first:
-      213: -6698053808211914146
-    second: 1x_3
+      213: 2673702237792488260
+    second: Pngtreesandwich_with_slice_per_ingredient_8366630_3
   - first:
-      213: -3743597005656397870
-    second: 1x_4
+      213: -5317286111406343795
+    second: Pngtreesandwich_with_slice_per_ingredient_8366630_4
   - first:
-      213: -673261699922730533
-    second: 1x_5
-  - first:
-      213: -2265170066366850464
-    second: 1x_6
-  - first:
-      213: 1152089319369271912
-    second: 1x_7
-  - first:
-      213: 5303989318115558437
-    second: 1x_8
-  - first:
-      213: 965119642373957290
-    second: 1x_9
-  - first:
-      213: -1233707945345001735
-    second: 1x_10
-  - first:
-      213: -7422664756360350541
-    second: 1x_11
+      213: 2011940903602988379
+    second: Pngtreesandwich_with_slice_per_ingredient_8366630_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +79,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -122,7 +104,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
     maxTextureSize: 2048
@@ -134,7 +116,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -146,18 +128,18 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1x_0
+      name: Pngtreesandwich_with_slice_per_ingredient_8366630_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 26
-        width: 73
-        height: 73
+        x: 812
+        y: 2428
+        width: 1414
+        height: 466
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d46c1253950d4920800000000000000
-      internalID: 2976041059057689810
+      spriteID: 70e51edd3755debe0800000000000000
+      internalID: -1446405949183926777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_1
+      name: Pngtreesandwich_with_slice_per_ingredient_8366630_1
       rect:
         serializedVersion: 2
-        x: 108
-        y: 26
-        width: 74
-        height: 74
+        x: 862
+        y: 1948
+        width: 1351
+        height: 382
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7b3b076e8cc2f400800000000000000
-      internalID: 356572232501902205
+      spriteID: 7dd8427133755f900800000000000000
+      internalID: 717575592578682327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_2
+      name: Pngtreesandwich_with_slice_per_ingredient_8366630_2
       rect:
         serializedVersion: 2
-        x: 191
-        y: 26
-        width: 72
-        height: 74
+        x: 837
+        y: 1540
+        width: 1337
+        height: 365
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32a84e1b3eaf79a60800000000000000
-      internalID: 7680883545352735267
+      spriteID: 0ab9b2c5459e443e0800000000000000
+      internalID: -2070273380150699104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_3
+      name: Pngtreesandwich_with_slice_per_ingredient_8366630_3
       rect:
         serializedVersion: 2
-        x: 272
-        y: 26
-        width: 73
-        height: 75
+        x: 792
+        y: 1053
+        width: 1479
+        height: 424
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,20 +210,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e52931b9c8bbb03a0800000000000000
-      internalID: -6698053808211914146
+      spriteID: 44bc9c6f406ea1520800000000000000
+      internalID: 2673702237792488260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_4
+      name: Pngtreesandwich_with_slice_per_ingredient_8366630_4
       rect:
         serializedVersion: 2
-        x: 354
-        y: 26
-        width: 72
-        height: 75
+        x: 783
+        y: 572
+        width: 1529
+        height: 430
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d762a79b521c0cc0800000000000000
-      internalID: -3743597005656397870
+      spriteID: d89b18034743536b0800000000000000
+      internalID: -5317286111406343795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_5
+      name: Pngtreesandwich_with_slice_per_ingredient_8366630_5
       rect:
         serializedVersion: 2
-        x: 435
-        y: 26
-        width: 72
-        height: 76
+        x: 864
+        y: 90
+        width: 1421
+        height: 379
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,134 +252,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd1ea3f0d0818a6f0800000000000000
-      internalID: -673261699922730533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1x_6
-      rect:
-        serializedVersion: 2
-        x: 516
-        y: 26
-        width: 73
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06a1b5673df7090e0800000000000000
-      internalID: -2265170066366850464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1x_7
-      rect:
-        serializedVersion: 2
-        x: 598
-        y: 26
-        width: 72
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86ae686c12b0dff00800000000000000
-      internalID: 1152089319369271912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1x_8
-      rect:
-        serializedVersion: 2
-        x: 679
-        y: 26
-        width: 73
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5248ebede2e8b9940800000000000000
-      internalID: 5303989318115558437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1x_9
-      rect:
-        serializedVersion: 2
-        x: 761
-        y: 24
-        width: 72
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa6a379833bc46d00800000000000000
-      internalID: 965119642373957290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1x_10
-      rect:
-        serializedVersion: 2
-        x: 842
-        y: 26
-        width: 72
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f65221092df0eee0800000000000000
-      internalID: -1233707945345001735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1x_11
-      rect:
-        serializedVersion: 2
-        x: 923
-        y: 26
-        width: 73
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b474562bb56df890800000000000000
-      internalID: -7422664756360350541
+      spriteID: b55a5549799dbeb10800000000000000
+      internalID: 2011940903602988379
       vertices: []
       indices: 
       edges: []
@@ -405,7 +261,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d8c5648b3b9e55f428dfeb7fa99e8fc3
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
