@@ -11,7 +11,7 @@ public class Tomato3LVL2 : MonoBehaviour
     {
         if (isAllowdSound)
         {
-            AudioManager.instance.Play("Eat");
+            AudioManager.instance.Play("drink");
             isAllowdSound = false;
         }
         PlayerMovement.isTouched = true;

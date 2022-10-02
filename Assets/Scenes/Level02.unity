@@ -2980,6 +2980,183 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6420795ab2fab84b91784b1d329d79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &517303398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 517303400}
+  - component: {fileID: 517303399}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &517303399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517303398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9573f342d91e9f44b92a4890aea679bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: GameOver
+    clip: {fileID: 8300000, guid: 451beac854d19574db755da12da64081, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Coins
+    clip: {fileID: 8300000, guid: f02d48d6aa387ab4891eb3c1b8d5e5b3, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: FirstJump
+    clip: {fileID: 8300000, guid: d896dd379c457c544bd1e6b4348cc939, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SecondJump
+    clip: {fileID: 8300000, guid: 8624073392e105949abbe5bd3f6e1eb3, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Checkpoint
+    clip: {fileID: 8300000, guid: 1db0dea281957cb4cadb386d619b4426, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shoot
+    clip: {fileID: 8300000, guid: 0fed45335f8729746ad728c1c2e79ceb, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDamage
+    clip: {fileID: 8300000, guid: 3242b7f0774f06c459cdd225d219e12e, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ZombieScream
+    clip: {fileID: 8300000, guid: 3c07835c7593f8d47a379e024ecf3db4, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ZombieBreathing
+    clip: {fileID: 8300000, guid: 3e68d3dd6212d2447962e527f07f65e4, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Oracle
+    clip: {fileID: 8300000, guid: bb6d3fa9647b59f458f1cd3fb40ebff9, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BackgroundSound
+    clip: {fileID: 8300000, guid: 42b497f8f2676b64482f69da30dcd8e6, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Eat
+    clip: {fileID: 8300000, guid: 29bd54caf748d2648aa11d0c6ca4b9fb, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: levelWin
+    clip: {fileID: 8300000, guid: 9e6d853e150d70248868ccb284b6038a, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: grabKey
+    clip: {fileID: 8300000, guid: 6b193a643b5b00d4695d692ee75b47a2, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: putKey
+    clip: {fileID: 8300000, guid: b3993ac2786b34c4e806341fe198c98d, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: openDoor
+    clip: {fileID: 8300000, guid: ba40c5dbfedb9b949abe911ce9638fcc, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: itemPickup
+    clip: {fileID: 8300000, guid: 278c50c57b22cc048af3d0eef8b812c4, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: collectedItem
+    clip: {fileID: 8300000, guid: 54ea37b3c6d9bc54cbb69dbb8b096997, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: drink
+    clip: {fileID: 8300000, guid: 12764195a029b1d49b9306548eca5afb, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &517303400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517303398}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4382,6 +4559,7 @@ MonoBehaviour:
   signalOn: {fileID: 11400000, guid: e5a3eea30f2946444a36ce47ecf7fa19, type: 2}
   signalOff: {fileID: 11400000, guid: 619887e8ddaf9a24dab0d935cb2ece2e, type: 2}
   gameO: {fileID: 1454154947}
+  game: {fileID: 819835080}
   theSR: {fileID: 819835082}
   doorOpenSprite: {fileID: 21300000, guid: c7193651d506bac45b537a27d37aa181, type: 3}
   doorOpen: 0
@@ -5366,113 +5544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6420795ab2fab84b91784b1d329d79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &964310032
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 964310034}
-  - component: {fileID: 964310033}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &964310033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964310032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9573f342d91e9f44b92a4890aea679bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: GameOver
-    clip: {fileID: 8300000, guid: 451beac854d19574db755da12da64081, type: 3}
-    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Coins
-    clip: {fileID: 8300000, guid: f02d48d6aa387ab4891eb3c1b8d5e5b3, type: 3}
-    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: FirstJump
-    clip: {fileID: 8300000, guid: d896dd379c457c544bd1e6b4348cc939, type: 3}
-    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: SecondJump
-    clip: {fileID: 8300000, guid: 8624073392e105949abbe5bd3f6e1eb3, type: 3}
-    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Checkpoint
-    clip: {fileID: 8300000, guid: 1db0dea281957cb4cadb386d619b4426, type: 3}
-    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Shoot
-    clip: {fileID: 8300000, guid: 0fed45335f8729746ad728c1c2e79ceb, type: 3}
-    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDamage
-    clip: {fileID: 8300000, guid: 3242b7f0774f06c459cdd225d219e12e, type: 3}
-    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: ZombieScream
-    clip: {fileID: 8300000, guid: 3c07835c7593f8d47a379e024ecf3db4, type: 3}
-    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: ZombieBreathing
-    clip: {fileID: 8300000, guid: 3e68d3dd6212d2447962e527f07f65e4, type: 3}
-    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
---- !u!4 &964310034
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964310032}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &974737510
 GameObject:
   m_ObjectHideFlags: 0
@@ -5564,8 +5635,8 @@ GameObject:
   m_Component:
   - component: {fileID: 998139713}
   - component: {fileID: 998139712}
-  - component: {fileID: 998139715}
   - component: {fileID: 998139714}
+  - component: {fileID: 998139715}
   m_Layer: 0
   m_Name: 2
   m_TagString: Untagged
@@ -5650,8 +5721,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1f253d26a45574a82b6936366abca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &998139715
-CircleCollider2D:
+--- !u!61 &998139715
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5664,8 +5735,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.3900003, y: 6.1499996}
+    newSize: {x: 3.39, y: 3.39}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.695
+  m_Size: {x: 5.3900003, y: 6.1499996}
+  m_EdgeRadius: 0
 --- !u!1 &1001963590
 GameObject:
   m_ObjectHideFlags: 0
@@ -7528,8 +7609,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1454154949}
   - component: {fileID: 1454154948}
-  - component: {fileID: 1454154951}
   - component: {fileID: 1454154950}
+  - component: {fileID: 1454154951}
   m_Layer: 0
   m_Name: 4
   m_TagString: Untagged
@@ -7614,8 +7695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35bc26a2aefc4a042ab994e45b7116b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &1454154951
-CircleCollider2D:
+--- !u!61 &1454154951
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7628,8 +7709,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.16, y: 6.1499996}
+    newSize: {x: 3.39, y: 3.39}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.695
+  m_Size: {x: 5.16, y: 6.1499996}
+  m_EdgeRadius: 0
 --- !u!1 &1464695767
 GameObject:
   m_ObjectHideFlags: 0
@@ -8215,8 +8306,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1545412900}
   - component: {fileID: 1545412899}
-  - component: {fileID: 1545412902}
   - component: {fileID: 1545412901}
+  - component: {fileID: 1545412902}
   m_Layer: 0
   m_Name: 3
   m_TagString: Untagged
@@ -8301,8 +8392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e05ff2c1390d20542a4ea8db156988d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &1545412902
-CircleCollider2D:
+--- !u!61 &1545412902
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8315,8 +8406,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.97, y: 7.29}
+    newSize: {x: 3.39, y: 3.39}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.695
+  m_Size: {x: 3.97, y: 7.29}
+  m_EdgeRadius: 0
 --- !u!1 &1569821072
 GameObject:
   m_ObjectHideFlags: 0
@@ -9485,9 +9586,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.027374683, y: 0}
   serializedVersion: 2
-  m_Radius: 1.645
+  m_Radius: 2.3293657
 --- !u!114 &1814519794
 MonoBehaviour:
   m_ObjectHideFlags: 0

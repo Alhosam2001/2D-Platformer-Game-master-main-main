@@ -43,7 +43,7 @@ public class MirgeBurgers : MonoBehaviour
             {
                 if (isAllowdSound)
                 {
-                    AudioManager.instance.Play("collectedItem");
+                    AudioManager.instance.Play("pickup2");
                     isAllowdSound = false;
                 }
                 game.SetActive(true);

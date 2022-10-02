@@ -9,6 +9,7 @@ public class Chest : MonoBehaviour
     public Signal signalOff;
     private PlayerController thePlayer;
     public GameObject gameO;
+    public GameObject game;
 
     public SpriteRenderer theSR;
     public Sprite doorOpenSprite;
@@ -37,7 +38,7 @@ public class Chest : MonoBehaviour
                 waitingToOpen = false;
 
                 doorOpen = true;
-
+                game.SetActive(false);
                 theSR.sprite = doorOpenSprite;
 
                 thePlayer.followingKey.gameObject.SetActive(false);
