@@ -9,6 +9,8 @@ public class Key : MonoBehaviour
 
     public float followSpeed;
 
+    public static bool isAllowdSound = true;
+
     public Transform followTarget;
 
     // Start is called before the first frame update
@@ -30,6 +32,11 @@ public class Key : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            if (isAllowdSound)
+            {
+                AudioManager.instance.Play("grabKey");
+                isAllowdSound = false;
+            }
             if (!isFollowing)
             {
                 PlayerController thePlayer = FindObjectOfType<PlayerController>();

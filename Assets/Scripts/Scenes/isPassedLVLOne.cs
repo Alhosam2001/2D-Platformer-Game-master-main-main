@@ -18,6 +18,7 @@ public class isPassedLVLOne : MonoBehaviour
     {
         if (Door.isWinningLVL1)
         {
+            AudioManager.instance.Stop("BackgroundSound");
             star.SetActive(true);
         }
     }

@@ -12,7 +12,7 @@ public class BecomeHealther : MonoBehaviour
         {
             PlayerMovement.Healther = true;
             enterCount++;
-            if (enterCount == 7)
+            if (enterCount == 5)
             {
                 heal.SetActive(false);
             }

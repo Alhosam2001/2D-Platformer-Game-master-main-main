@@ -17,6 +17,7 @@ public class Door : MonoBehaviour
     public static bool isWinningLVL1 = false;
     public static bool isWinningLVL2 = false;
     public static bool isWinningLVL3 = false;
+    public static bool isAllowdSound = true;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,12 @@ public class Door : MonoBehaviour
         {
             if (Vector3.Distance(thePlayer.followingKey.transform.position,transform.position) < 0.1f)
             {
+                if (isAllowdSound)
+                {
+                    AudioManager.instance.Play("putKey");
+                    AudioManager.instance.Play("openDoor");
+                }
+                //AudioManager.instance.Play("putKey");
                 waitingToOpen = false;
 
                 doorOpen = true;
@@ -43,6 +50,11 @@ public class Door : MonoBehaviour
         }
         if (doorOpen && Vector3.Distance(thePlayer.transform.position,transform.position)<1f)
         {
+            if (isAllowdSound)
+            {
+                AudioManager.instance.Play("levelWin");
+                isAllowdSound = false;
+            }
             if (SceneManager.GetActiveScene().name == "Level01")
             {
                 isWinningLVL1 = true;

@@ -9,6 +9,7 @@ public class Mirge : MonoBehaviour
 
     private PlayerController thePlayer;
     public GameObject game;
+    public static bool isAllowdSound = true;
 
     void Start()
     {
@@ -44,6 +45,11 @@ public class Mirge : MonoBehaviour
             }
             if (Tomato4.isCollected4 && Tomato3.isCollected3 && Tomato2.isCollected2 && Tomato.isCollected)
             {
+                if (isAllowdSound)
+                {
+                    AudioManager.instance.Play("collectedItem");
+                    isAllowdSound = false;
+                }
                 game.SetActive(true);
             }
         }

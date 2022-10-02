@@ -28,12 +28,16 @@ public class PlayerManager : MonoBehaviour
         numberOfCoins = PlayerPrefs.GetInt("NumberOfCoins", 0);
         isGameOver = false;
     }
-
+    private void Start()
+    {
+        AudioManager.instance.Play("BackgroundSound");
+    }
     void Update()
     {
         coinsText.text = numberOfCoins.ToString() ;
         if (isGameOver)
         {
+            AudioManager.instance.Play("BackgroundSound");
             gameOverScreen.SetActive(true);
         }
     }
@@ -46,12 +50,14 @@ public class PlayerManager : MonoBehaviour
     public void PauseGame()
     {
         Time.timeScale = 0;
+        AudioManager.instance.Stop("BackgroundSound");
         pauseMenuScreen.SetActive(true);
     }
     public void ResumeGame()
     {
         Time.timeScale = 1;
         pauseMenuScreen.SetActive(false);
+        AudioManager.instance.Play("BackgroundSound");
     }
     public void GoToMenu()
     {

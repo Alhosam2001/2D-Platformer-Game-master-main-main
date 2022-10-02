@@ -14,6 +14,7 @@ public class Chest : MonoBehaviour
     public Sprite doorOpenSprite;
 
     public bool doorOpen, waitingToOpen;
+    public static bool isAllowdSound = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,12 @@ public class Chest : MonoBehaviour
         {
             if (Vector3.Distance(thePlayer.followingKey.transform.position, transform.position) < 0.1f)
             {
+                if (isAllowdSound)
+                {
+                    AudioManager.instance.Play("putKey");
+                    AudioManager.instance.Play("openDoor");
+                    isAllowdSound = false;
+                }
                 waitingToOpen = false;
 
                 doorOpen = true;

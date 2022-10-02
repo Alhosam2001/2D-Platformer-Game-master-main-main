@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float habdehX;
     public float habdehY;
     public int i = 4;
-    public Vector3 valueOfDieting = new Vector3(0.05f,0.05f,0);
+    public Vector3 valueOfDieting = new Vector3(0.5f,0.5f,0);
     public Vector3 check = new Vector3();
 
     public static bool isTouched = false;
@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
             speed = speed - 0.5f * speedFat;
             isTouched = false;
         }
-        if (Healther && BecomeHealther.enterCount < 9)
+        if (Healther && BecomeHealther.enterCount < 8)
         {
                 habdehX -= valueOfDieting.x;
                 habdehY -= valueOfDieting.y;
