@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float habdehX;
     public float habdehY;
     public int i = 4;
-    public Vector3 scaleAfterChange = new Vector3(0.1f,0.1f,0);
+    public Vector3 valueOfDieting = new Vector3(0.05f,0.05f,0);
     public Vector3 check = new Vector3();
 
     public static bool isTouched = false;
@@ -56,30 +56,23 @@ public class PlayerMovement : MonoBehaviour
             habdehX = transform.localScale.x + 0.2f;
             habdehY = transform.localScale.y + 0.2f;
 
-            transform.localScale += scaleAfterChange;
+            transform.localScale += valueOfDieting;
             check = transform.localScale;
-            Debug.Log(check);
             speedFat = 100f;
-            //speed = speed - 0.5f * speedFat;
+            speed = speed - 0.5f * speedFat;
             isTouched = false;
         }
-        if (Healther && BecomeHealther.enterCount <5)
+        if (Healther && BecomeHealther.enterCount < 9)
         {
-            habdehX -= scaleAfterChange.x;
-                habdehY -= scaleAfterChange.y;
+                habdehX -= valueOfDieting.x;
+                habdehY -= valueOfDieting.y;
                 transform.localScale = new Vector3(habdehX, habdehY, 0);
                 check = new Vector3(habdehX, habdehY, 0);
-                Debug.Log(check);
-                Debug.Log(transform.localScale);
                 speedFat = 250f;
-                //speed = speed - 0.5f * speedFat;
+                speed = speed + 0.1f * speedFat;
                 Healther = false;
-            transform.eulerAngles = new Vector3(0, 180, 0);
+                transform.eulerAngles = new Vector3(0, 180, 0);
         }
-        //if ()
-        //{
-        //    game.SetActive(false);
-        //}
     }
 
     void Flip()

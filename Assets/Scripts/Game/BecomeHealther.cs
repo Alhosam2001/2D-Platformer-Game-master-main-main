@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BecomeHealther : MonoBehaviour
 {
+    public GameObject heal;
     public static int enterCount = 0;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -11,6 +12,10 @@ public class BecomeHealther : MonoBehaviour
         {
             PlayerMovement.Healther = true;
             enterCount++;
+            if (enterCount == 7)
+            {
+                heal.SetActive(false);
+            }
         }
     }
 }

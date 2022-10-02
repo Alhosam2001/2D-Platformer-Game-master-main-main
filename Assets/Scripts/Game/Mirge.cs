@@ -10,7 +10,6 @@ public class Mirge : MonoBehaviour
     private PlayerController thePlayer;
     public GameObject game;
 
-    public bool waitingToOpen;
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerController>();
@@ -23,22 +22,22 @@ public class Mirge : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            if (Tomato.isCollected || Burger.isCollected_1)
+            if (Tomato.isCollected)
             {
                 spriteRender1.sprite.color = new Color(255, 255, 255, 255);
                 thePlayer.firstPos.gameObject.SetActive(false);
             }
-            if (Tomato2.isCollected2 || Burger2.isCollected_2)
+            if (Tomato2.isCollected2)
             {
                 spriteRender2.sprite.color = new Color(255, 255, 255, 255);
                 thePlayer.secondPos.gameObject.SetActive(false);
             }
-            if (Tomato3.isCollected3 || Burger3.isCollected_3)
+            if (Tomato3.isCollected3)
             {
                 spriteRender3.sprite.color = new Color(255, 255, 255, 255);
                 thePlayer.thirdPos.gameObject.SetActive(false);
             }
-            if (Tomato4.isCollected4 || Burger4.isCollected_4)
+            if (Tomato4.isCollected4)
             {
                 spriteRender4.sprite.color = new Color(255, 255, 255, 255);
                 thePlayer.forthPos.gameObject.SetActive(false);

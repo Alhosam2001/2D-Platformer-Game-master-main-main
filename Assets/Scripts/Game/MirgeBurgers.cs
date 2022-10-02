@@ -9,7 +9,6 @@ public class MirgeBurgers : MonoBehaviour
     private PlayerController thePlayer;
     public GameObject game;
 
-    public bool waitingToOpen;
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerController>();
