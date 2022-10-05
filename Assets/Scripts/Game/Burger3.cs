@@ -6,8 +6,11 @@ public class Burger3 : MonoBehaviour
 {
     public static GameObject gameObject1;
     public static bool isCollected_3;
-    public bool isAllowdSound = true;
-
+    public bool isAllowdSound;
+    private void Start()
+    {
+        isAllowdSound = true;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isAllowdSound)

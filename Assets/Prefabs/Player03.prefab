@@ -42,6 +42,7 @@ Transform:
   - {fileID: 5586773069631015991}
   - {fileID: 1314935669450544002}
   - {fileID: 6827953233449340947}
+  - {fileID: 5490879384895626183}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -210,12 +211,14 @@ MonoBehaviour:
   jumpPower: 0
   anim: {fileID: 0}
   keyFollowPoint: {fileID: 8026522513696418438}
+  keyChestFollowPoint: {fileID: 5490879384895626183}
   Information: {fileID: 6277472586182151440}
   firstPosition: {fileID: 1891198389369534448}
   secondPosition: {fileID: 5586773069631015991}
   thirdPosition: {fileID: 1314935669450544002}
   forthPosition: {fileID: 6827953233449340947}
   followingKey: {fileID: 0}
+  followingKeyChest: {fileID: 0}
   followInfo: {fileID: 0}
   firstPos: {fileID: 0}
   secondPos: {fileID: 0}
@@ -512,4 +515,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1791418735075586398}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9186071889062045796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5490879384895626183}
+  m_Layer: 6
+  m_Name: keyChestFollowngPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5490879384895626183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9186071889062045796}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.71032715, y: 0.865556, z: 0}
+  m_LocalScale: {x: 0.9737, y: 0.96879995, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1791418735075586398}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

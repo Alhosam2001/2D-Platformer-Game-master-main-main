@@ -4,16 +4,10 @@ using UnityEngine;
 
 public class Tomato3LVL2 : MonoBehaviour
 {
-    public static SpriteRenderer tomato;
     public static bool isCollected;
-    public static bool isAllowdSound = true;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (isAllowdSound)
-        {
-            AudioManager.instance.Play("drink");
-            isAllowdSound = false;
-        }
+        AudioManager.instance.Play("drink");
         PlayerMovement.isTouched = true;
         isCollected = true;
         Destroy(gameObject);

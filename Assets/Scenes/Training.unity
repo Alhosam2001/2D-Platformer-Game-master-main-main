@@ -609,7 +609,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &132724759
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2466,7 +2466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &731285242
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2735,6 +2735,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   game: {fileID: 1117866694}
   game2: {fileID: 1762820371}
+  leftArrow: {fileID: 132724758}
+  rightArrow: {fileID: 60773399}
 --- !u!1 &882615767
 GameObject:
   m_ObjectHideFlags: 0
@@ -3686,7 +3688,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -187.976}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1048, y: 189}
+  m_AnchoredPosition: {x: 1003, y: 193}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1152698975
@@ -4628,9 +4630,9 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: BackgroundSound
-    clip: {fileID: 8300000, guid: 42b497f8f2676b64482f69da30dcd8e6, type: 3}
+    clip: {fileID: 8300000, guid: 545359d88edb5464ebe68e401b5be439, type: 3}
     mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -4678,6 +4680,153 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: collectedItem
     clip: {fileID: 8300000, guid: 54ea37b3c6d9bc54cbb69dbb8b096997, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MoveForward
+    clip: {fileID: 8300000, guid: f041830ed4952054ea2ec0878b3237fd, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MoveBackward
+    clip: {fileID: 8300000, guid: 113f913b63c08ee45b7917a9794bfb29, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 3e8e4620f9d46e64685095c285d767d2, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DoubleJump
+    clip: {fileID: 8300000, guid: 0c7b07933af43e841a4583130a0378ac, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Ready
+    clip: {fileID: 8300000, guid: ac0def8298f9a494ba0b520d9cf3c8b4, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Ready1
+    clip: {fileID: 8300000, guid: a9bf99ee158e63940b5ecb8a5c5bc972, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: StartOfLvl1
+    clip: {fileID: 8300000, guid: 6b4c7504b3de749408de1e6601f86b50, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Lvl1Complement
+    clip: {fileID: 8300000, guid: 74985befa8767e342828eeaa92cd8969, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SideBurgersEffect
+    clip: {fileID: 8300000, guid: f52ca738651f9c048a6c2bffaaf9dca8, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TomatoBenefits
+    clip: {fileID: 8300000, guid: 19581f0e4cab8904f845fd623e45bd25, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Lvl1Done
+    clip: {fileID: 8300000, guid: 61c42ee7cb34c5546935ab020f95c5e7, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EatingTooMuch
+    clip: {fileID: 8300000, guid: 4d85f740ca699b549bfeb29207bc5624, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: JumpEvent
+    clip: {fileID: 8300000, guid: d0d044ec4789e084996e9849cba0fdb1, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: JumpEventDone
+    clip: {fileID: 8300000, guid: 8be71a1f5c8334a4f99a4d5a305d1b63, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: KeyPickup
+    clip: {fileID: 8300000, guid: 544bd6493cb6bd541903a34fe4a302c1, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Quest
+    clip: {fileID: 8300000, guid: 7e4e3134bd572a74192434c8f964e2f1, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DieMultipleTimes
+    clip: {fileID: 8300000, guid: 2991b31e759759f41a8d29644c76098c, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DieOneTime
+    clip: {fileID: 8300000, guid: bfdd7bd7b2670b746abf605f777e745a, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TryingToSwim
+    clip: {fileID: 8300000, guid: 532c7245d5e67d941a48078315d61d1a, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: pickup2
+    clip: {fileID: 8300000, guid: 9bc82345de0b5d243b1e8f02039aff9e, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: drink
+    clip: {fileID: 8300000, guid: 12764195a029b1d49b9306548eca5afb, type: 3}
     mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
     volume: 1
     pitch: 1
@@ -5019,7 +5168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473814890}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12, y: 1.28, z: -9.999256}
+  m_LocalPosition: {x: -5.25, y: -0.49, z: -9.999256}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5038,7 +5187,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.9942684, y: 2.1403959}
+  m_Offset: {x: -0.040475607, y: 0.010834694}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5049,7 +5198,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16.484531, y: 4.7537293}
+  m_Size: {x: 2.1522346, y: 0.48067236}
   m_EdgeRadius: 0
 --- !u!114 &1473814893
 MonoBehaviour:
@@ -5228,6 +5377,76 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1587565698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1587565701}
+  - component: {fileID: 1587565700}
+  - component: {fileID: 1587565699}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1587565699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587565698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97e2dee2635beb44bc31daeee5aa156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1587565700
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587565698}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00941515, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2447948, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1587565701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587565698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.243229, y: -2.88, z: -1.0831085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1614094329
 GameObject:
   m_ObjectHideFlags: 0
@@ -5374,7 +5593,7 @@ GameObject:
   m_Layer: 0
   m_Name: nextLevel
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5429,7 +5648,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.090166, y: 1}
+  m_Size: {x: 18.917482, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1642049455
 GameObject:
@@ -5501,6 +5720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 412656541}
   mixer: {fileID: 24100000, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+  button: {fileID: 0}
 --- !u!114 &1677567009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5605,7 +5825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1708751458}
   - component: {fileID: 1708751459}
-  - component: {fileID: 1708751460}
+  - component: {fileID: 1708751461}
   m_Layer: 0
   m_Name: leftButton
   m_TagString: Untagged
@@ -5653,7 +5873,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9779706, y: 2.5973518}
   m_EdgeRadius: 0
---- !u!114 &1708751460
+--- !u!114 &1708751461
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5662,11 +5882,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1708751457}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 231f0235c4722ba4faa6f537e1802420, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ca6b1d0601c1e04585f9b8e4616d7e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   game: {fileID: 1762820371}
   game2: {fileID: 1152698973}
+  leftArrow: {fileID: 132724758}
+  jumpArrow: {fileID: 731285241}
 --- !u!1 &1762820371
 GameObject:
   m_ObjectHideFlags: 0
@@ -6491,6 +6713,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 0}
   pauseMenuScreen: {fileID: 287592686}
+  left: {fileID: 0}
+  right: {fileID: 0}
+  jump: {fileID: 0}
+  attack: {fileID: 0}
+  menu: {fileID: 0}
   coinsText: {fileID: 1162778423}
   VCam: {fileID: 1320800123}
   playerPrefabs:

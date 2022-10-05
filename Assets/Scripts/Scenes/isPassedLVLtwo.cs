@@ -14,7 +14,7 @@ public class isPassedLVLtwo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Door.isWinningLVL2)
+        if (EndDoor.isWinningLVL2)
         {
             AudioManager.instance.Stop("BackgroundSound");
             star.SetActive(true);

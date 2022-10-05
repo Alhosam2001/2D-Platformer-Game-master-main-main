@@ -14,9 +14,5 @@ public class isPassedLVLthree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Door.isWinningLVL3)
-        {
-            star.SetActive(true);
-        }
     }
 }

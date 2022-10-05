@@ -9,11 +9,14 @@ public class Mirge : MonoBehaviour
 
     private PlayerController thePlayer;
     public GameObject game;
-    public static bool isAllowdSound = true;
+    public GameObject key;
+    public GameObject keySigns;
+    public static bool isAllowdSound;
 
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerController>();
+        isAllowdSound = true;
     }
     public void Update()
     {
@@ -47,10 +50,15 @@ public class Mirge : MonoBehaviour
             {
                 if (isAllowdSound)
                 {
-                    AudioManager.instance.Play("pickup2");
+                    AudioManager.instance.Play("TomatoBenefits");
                     isAllowdSound = false;
                 }
                 game.SetActive(true);
+            }
+            if (Tomato4.isCollected4 && Tomato3.isCollected3 && Tomato2.isCollected2 && Tomato.isCollected && Burger.isCollected_1 && Burger2.isCollected_2 && Burger3.isCollected_3 && Burger4.isCollected_4)
+            {
+                key.SetActive(true);
+                keySigns.SetActive(true);
             }
         }
     }

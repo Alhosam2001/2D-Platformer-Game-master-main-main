@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ChaseState : StateMachineBehaviour
@@ -5,7 +6,6 @@ public class ChaseState : StateMachineBehaviour
     Transform target;
     public float speed = 3;
     Transform borderCheck;
-
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -23,7 +23,15 @@ public class ChaseState : StateMachineBehaviour
 
         float distance = Vector2.Distance(target.position, animator.transform.position);
         if (distance < 1.5f)
+        {
             animator.SetBool("isAttacking", true);
+            HealthManager.health = 0;
+            if (HealthManager.health <= 0)
+            {
+                PlayerManager.isGameOver = true;
+                AudioManager.instance.Play("GameOver");
+            }
+        }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
@@ -31,5 +39,4 @@ public class ChaseState : StateMachineBehaviour
     {
         
     }
-
 }

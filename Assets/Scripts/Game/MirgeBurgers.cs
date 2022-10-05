@@ -9,14 +9,16 @@ public class MirgeBurgers : MonoBehaviour
     private PlayerController thePlayer;
     public GameObject game;
 
-    public static bool isAllowdSound = true;
+    public static bool isAllowdSound;
 
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerController>();
+        isAllowdSound = true;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.tag == "Player")
         {
             if (Burger.isCollected_1)
@@ -43,7 +45,7 @@ public class MirgeBurgers : MonoBehaviour
             {
                 if (isAllowdSound)
                 {
-                    AudioManager.instance.Play("pickup2");
+                    AudioManager.instance.Play("SideBurgersEffect");
                     isAllowdSound = false;
                 }
                 game.SetActive(true);

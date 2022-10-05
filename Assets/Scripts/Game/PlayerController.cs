@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
 
     public Transform keyFollowPoint;
+    public Transform keyChestFollowPoint;
     public Transform Information;
 
     public Transform firstPosition;
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public Transform forthPosition;
 
     public Key followingKey;
+    public KeyChest followingKeyChest;
 
     public Information followInfo;
 

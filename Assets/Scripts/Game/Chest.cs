@@ -27,13 +27,16 @@ public class Chest : MonoBehaviour
     {
         if (waitingToOpen)
         {
-            if (Vector3.Distance(thePlayer.followingKey.transform.position, transform.position) < 0.1f)
+            if (KeyChest.noChestKey)
+            {
+                signalOff.Raise();
+            }
+            if (Vector3.Distance(thePlayer.followingKeyChest.transform.position, transform.position) < 0.1f)
             {
                 if (isAllowdSound)
                 {
                     AudioManager.instance.Play("putKey");
                     AudioManager.instance.Play("openDoor");
-                    isAllowdSound = false;
                 }
                 waitingToOpen = false;
 
@@ -41,8 +44,8 @@ public class Chest : MonoBehaviour
                 game.SetActive(false);
                 theSR.sprite = doorOpenSprite;
 
-                thePlayer.followingKey.gameObject.SetActive(false);
-                thePlayer.followingKey = null;
+                thePlayer.followingKeyChest.gameObject.SetActive(false);
+                thePlayer.followingKeyChest = null;
                 gameO.SetActive(true);
             }
         }
@@ -52,10 +55,14 @@ public class Chest : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            signalOn.Raise();
-            if (thePlayer.followingKey != null)
+            if (!KeyChest.noChestKey)
             {
-                thePlayer.followingKey.followTarget = transform;
+                AudioManager.instance.Play("Quest");
+                signalOn.Raise();
+            }
+            if (thePlayer.followingKeyChest != null)
+            {
+                thePlayer.followingKeyChest.followTarget = transform;
                 waitingToOpen = true;
             }
         }

@@ -15,8 +15,6 @@ public class Door : MonoBehaviour
 
     public bool doorOpen, waitingToOpen;
     public static bool isWinningLVL1 = false;
-    public static bool isWinningLVL2 = false;
-    public static bool isWinningLVL3 = false;
     public static bool isAllowdSound = true;
 
     // Start is called before the first frame update
@@ -30,6 +28,10 @@ public class Door : MonoBehaviour
     {
         if (waitingToOpen)
         {
+            if (Key.noKey)
+            {
+                signalOff.Raise();
+            }
             if (Vector3.Distance(thePlayer.followingKey.transform.position,transform.position) < 0.1f)
             {
                 if (isAllowdSound)
@@ -37,9 +39,7 @@ public class Door : MonoBehaviour
                     AudioManager.instance.Play("putKey");
                     AudioManager.instance.Play("openDoor");
                 }
-                //AudioManager.instance.Play("putKey");
                 waitingToOpen = false;
-
                 doorOpen = true;
                 theSR.sprite = doorOpenSprite;
 
@@ -52,21 +52,14 @@ public class Door : MonoBehaviour
         {
             if (isAllowdSound)
             {
-                AudioManager.instance.Play("levelWin");
+                AudioManager.instance.Play("Lvl1Done");
                 isAllowdSound = false;
             }
-            if (SceneManager.GetActiveScene().name == "Level01")
-            {
-                isWinningLVL1 = true;
-            }
-            if (SceneManager.GetActiveScene().name == "Level02")
-            {
-                isWinningLVL2 = true;
-            }
-            if (SceneManager.GetActiveScene().name == "Level03")
-            {
-                isWinningLVL3 = true;
-            }
+            //if (SceneManager.GetActiveScene().name == "Level01")
+            //{
+            //isWinningLVL1 = true;
+            //}
+            isWinningLVL1 = true;
             SceneManager.LoadScene("Transfer");
         }
     }
@@ -75,7 +68,11 @@ public class Door : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            signalOn.Raise();
+            if (!Key.noKey)
+            {
+                AudioManager.instance.Play("Quest");
+                signalOn.Raise();
+            }
             if (thePlayer.followingKey != null)
             {
                 thePlayer.followingKey.followTarget = transform;

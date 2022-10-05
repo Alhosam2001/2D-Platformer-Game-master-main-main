@@ -55,14 +55,13 @@ public class PlayerMovement : MonoBehaviour
         {
             habdehX = transform.localScale.x + 0.2f;
             habdehY = transform.localScale.y + 0.2f;
-
             transform.localScale += valueOfDieting;
             check = transform.localScale;
             speedFat = 100f;
             speed = speed - 0.5f * speedFat;
             isTouched = false;
         }
-        if (Healther && BecomeHealther.enterCount < 8)
+        if (Healther && BecomeHealther.enterCount < 7)
         {
                 habdehX -= valueOfDieting.x;
                 habdehY -= valueOfDieting.y;

@@ -5,7 +5,11 @@ using UnityEngine;
 public class Tomato2 : MonoBehaviour
 {
     public static bool isCollected2;
-    public static bool isAllowdSound = true;
+    public static bool isAllowdSound;
+    private void Start()
+    {
+        isAllowdSound = true;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isAllowdSound)

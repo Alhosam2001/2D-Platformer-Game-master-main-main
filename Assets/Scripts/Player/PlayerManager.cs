@@ -8,7 +8,12 @@ public class PlayerManager : MonoBehaviour
     public static bool isGameOver;
     public GameObject gameOverScreen;
     public GameObject pauseMenuScreen;
-
+    public GameObject left;
+    public GameObject right;
+    public GameObject jump; 
+    public GameObject attack;
+    public GameObject menu;
+    //public GameObject game;
     public static Vector2 lastCheckPointPos = new Vector2(-3,0);
 
     public static int numberOfCoins;
@@ -39,6 +44,12 @@ public class PlayerManager : MonoBehaviour
         {
             AudioManager.instance.Play("BackgroundSound");
             gameOverScreen.SetActive(true);
+            left.SetActive(false);
+            right.SetActive(false);
+            jump.SetActive(false);
+            attack.SetActive(false);
+            menu.SetActive(false);
+
         }
     }
 
@@ -63,4 +74,9 @@ public class PlayerManager : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+    //public void GoToMenuFromEnd()
+    //{
+    //    SceneManager.LoadScene("Menu");
+    //    game.SetActive(false);
+    //}
 }

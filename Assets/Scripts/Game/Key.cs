@@ -10,13 +10,18 @@ public class Key : MonoBehaviour
     public float followSpeed;
 
     public static bool isAllowdSound = true;
-
+    public static bool isAllowdSound1 = true;
+    public static bool noKey;
+    public static bool noKeyLVL2;
     public Transform followTarget;
 
+    public GameObject game;
+    public GameObject game1;
     // Start is called before the first frame update
     void Start()
     {
-        
+        noKey = false;
+        noKeyLVL2 = false;
     }
 
     // Update is called once per frame
@@ -24,6 +29,13 @@ public class Key : MonoBehaviour
     {
         if (isFollowing)
         {
+            game.SetActive(true);
+            game1.SetActive(false);
+            if (isAllowdSound1)
+            {  
+                AudioManager.instance.Play("KeyPickup");
+                isAllowdSound1 = false;
+            }
             transform.position = Vector3.Lerp(transform.position, followTarget.position, followSpeed * Time.deltaTime);
         }
     }
@@ -32,6 +44,8 @@ public class Key : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            noKey = true;
+            noKeyLVL2 = true;
             if (isAllowdSound)
             {
                 AudioManager.instance.Play("grabKey");
