@@ -55,11 +55,9 @@ public class Door : MonoBehaviour
                 AudioManager.instance.Play("Lvl1Done");
                 isAllowdSound = false;
             }
-            //if (SceneManager.GetActiveScene().name == "Level01")
-            //{
-            //isWinningLVL1 = true;
-            //}
             isWinningLVL1 = true;
+            PlayerManager.numberOfCoins += 25;
+            PlayerPrefs.SetInt("NumberOfCoins", PlayerManager.numberOfCoins);
             SceneManager.LoadScene("Transfer");
         }
     }

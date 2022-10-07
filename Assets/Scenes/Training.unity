@@ -4632,7 +4632,7 @@ MonoBehaviour:
   - name: BackgroundSound
     clip: {fileID: 8300000, guid: 545359d88edb5464ebe68e401b5be439, type: 3}
     mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
-    volume: 0.5
+    volume: 0.07
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -4827,6 +4827,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: drink
     clip: {fileID: 8300000, guid: 12764195a029b1d49b9306548eca5afb, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: warning
+    clip: {fileID: 8300000, guid: e9d8bcf5d3c1d5146b8199df6d5aea4f, type: 3}
     mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
     volume: 1
     pitch: 1

@@ -62,6 +62,8 @@ public class EndDoor : MonoBehaviour
             //    isWinningLVL2 = true;
             //}
             isWinningLVL2 = true;
+            PlayerManager.numberOfCoins += 25;
+            PlayerPrefs.SetInt("NumberOfCoins", PlayerManager.numberOfCoins);
             AudioManager.instance.Stop("BackgroundSound");
             SceneManager.LoadScene("END");
         }

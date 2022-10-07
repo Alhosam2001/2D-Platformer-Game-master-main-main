@@ -12,6 +12,9 @@ public class Tomato4LVL2 : MonoBehaviour
         PlayerMovement.isTouched = true;
         isCollected = true;
         Destroy(gameObject);
-        AudioManager.instance.Play("EatingTooMuch");
+        if (TomatoLVL2.isCollected && Tomato2LVL2.isCollected && Tomato3LVL2.isCollected && Tomato4LVL2.isCollected)
+        {
+            AudioManager.instance.Play("EatingTooMuch");
+        }
     }
 }

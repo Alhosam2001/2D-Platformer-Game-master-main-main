@@ -8,6 +8,7 @@ public class Tomato2LVL2 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         AudioManager.instance.Play("Eat");
+        AudioManager.instance.Play("warning");
         PlayerMovement.isTouched = true;
         isCollected = true;
         Destroy(gameObject);

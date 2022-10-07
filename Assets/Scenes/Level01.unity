@@ -688,7 +688,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 63460275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b3045c2d95ee7e40bc4d0bbf6f9c44a, type: 3}
+  m_Script: {fileID: 11500000, guid: 676f705abaffc0849aeac8eb49387271, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   followSpeed: 3
@@ -2903,7 +2903,7 @@ MonoBehaviour:
   - name: BackgroundSound
     clip: {fileID: 8300000, guid: 545359d88edb5464ebe68e401b5be439, type: 3}
     mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
-    volume: 0.5
+    volume: 0.07
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -3098,6 +3098,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: drink
     clip: {fileID: 8300000, guid: 12764195a029b1d49b9306548eca5afb, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: warning
+    clip: {fileID: 8300000, guid: e9d8bcf5d3c1d5146b8199df6d5aea4f, type: 3}
     mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
     volume: 1
     pitch: 1
@@ -4234,7 +4241,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 497338515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abbe2d2eec0010147926efdf79c340f6, type: 3}
+  m_Script: {fileID: 11500000, guid: cac09a0133ee4c74eb52d9b04afe31c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   followSpeed: 3
@@ -8711,8 +8718,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1045200749}
   - component: {fileID: 1045200753}
-  - component: {fileID: 1045200750}
   - component: {fileID: 1045200751}
+  - component: {fileID: 1045200750}
   - component: {fileID: 1045200752}
   m_Layer: 0
   m_Name: 1
@@ -8744,7 +8751,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1045200748}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff2b8a654ca94d445914c0f45587c182, type: 3}
+  m_Script: {fileID: 11500000, guid: 34f8636d0cb32994fa22a7655c31fc7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   followSpeed: 3
@@ -11498,7 +11505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1541338915}
   - component: {fileID: 1541338919}
-  - component: {fileID: 1541338916}
+  - component: {fileID: 1541338920}
   - component: {fileID: 1541338917}
   - component: {fileID: 1541338918}
   m_Layer: 0
@@ -11522,20 +11529,6 @@ Transform:
   m_Father: {fileID: 1752416584}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1541338916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541338914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4cb91294b7d29847ab152771cd6af5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followSpeed: 3
-  followTarget: {fileID: 6552908674945555195, guid: a423eb041b409f0448ecc9a70c2de2d4, type: 3}
 --- !u!114 &1541338917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11626,6 +11619,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1541338920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541338914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d26d7061012ae4bb4191a738dc6e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followSpeed: 3
+  followTarget: {fileID: 6552908674945555195, guid: a423eb041b409f0448ecc9a70c2de2d4, type: 3}
 --- !u!1 &1544385121
 GameObject:
   m_ObjectHideFlags: 0

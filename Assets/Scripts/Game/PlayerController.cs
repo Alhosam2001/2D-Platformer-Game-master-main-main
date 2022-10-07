@@ -17,7 +17,10 @@ public class PlayerController : MonoBehaviour
     public Transform secondPosition;
     public Transform thirdPosition;
     public Transform forthPosition;
-
+    public Transform fifthPosition;
+    public Transform sixthPosition;
+    public Transform seventhPosition;
+    public Transform aithPosition;
     public Key followingKey;
     public KeyChest followingKeyChest;
 
@@ -27,6 +30,10 @@ public class PlayerController : MonoBehaviour
     public TomatoSign2 secondPos;
     public TomatoSign3 thirdPos;
     public TomatoSign4 forthPos;
+    public BurgerSign fifthPos;
+    public BurgerSign2 sixthPos;
+    public BurgerSign3 seventhPos;
+    public BurgerSign4 aithPos;
 
     // Start is called before the first frame update
     void Start()

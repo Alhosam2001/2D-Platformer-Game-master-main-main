@@ -24,22 +24,22 @@ public class MirgeBurgers : MonoBehaviour
             if (Burger.isCollected_1)
             {
                 SpiriteBurger1.sprite.color = new Color(255f, 255f, 255f, 255f);
-                thePlayer.firstPos.gameObject.SetActive(false);
+                thePlayer.fifthPos.gameObject.SetActive(false);
             }
             if (Burger2.isCollected_2)
             {
                 SpiriteBurger2.sprite.color = new Color(255f, 255f, 255f, 255f);
-                thePlayer.secondPos.gameObject.SetActive(false);
+                thePlayer.sixthPos.gameObject.SetActive(false);
             }
             if (Burger3.isCollected_3)
             {
                 SpiriteBurger3.sprite.color = new Color(255f, 255f, 255f, 255f);
-                thePlayer.thirdPos.gameObject.SetActive(false);
+                thePlayer.seventhPos.gameObject.SetActive(false);
             }
             if (Burger4.isCollected_4)
             {
                 SpiriteBurger4.sprite.color = new Color(255f, 174f, 62f, 255f);
-                thePlayer.forthPos.gameObject.SetActive(false);
+                thePlayer.aithPos.gameObject.SetActive(false);
             }
             if (Burger.isCollected_1 && Burger2.isCollected_2 && Burger3.isCollected_3 && Burger4.isCollected_4)
             {
