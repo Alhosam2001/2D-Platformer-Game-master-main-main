@@ -56,6 +56,7 @@ public class Door : MonoBehaviour
                 isAllowdSound = false;
             }
             isWinningLVL1 = true;
+            AudioManager.instance.Play("Money");
             PlayerManager.numberOfCoins += 25;
             PlayerPrefs.SetInt("NumberOfCoins", PlayerManager.numberOfCoins);
             SceneManager.LoadScene("Transfer");

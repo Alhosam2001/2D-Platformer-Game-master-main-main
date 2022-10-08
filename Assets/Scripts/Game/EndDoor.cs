@@ -62,6 +62,7 @@ public class EndDoor : MonoBehaviour
             //    isWinningLVL2 = true;
             //}
             isWinningLVL2 = true;
+            AudioManager.instance.Play("Money");
             PlayerManager.numberOfCoins += 25;
             PlayerPrefs.SetInt("NumberOfCoins", PlayerManager.numberOfCoins);
             AudioManager.instance.Stop("BackgroundSound");

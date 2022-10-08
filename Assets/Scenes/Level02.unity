@@ -6801,6 +6801,13 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Money
+    clip: {fileID: 8300000, guid: 7a76e882bdc524441bd2c42751cbfae0, type: 3}
+    mixer: {fileID: 24300002, guid: 6728820ee0cd6fc4eb70ed7f558e3b21, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1059851829
 Transform:
   m_ObjectHideFlags: 0
